@@ -7,10 +7,10 @@ from sqlalchemy import create_engine
 import numpy as np
 
 # Thay đổi các thông số kết nối theo cơ sở dữ liệu SQL Server của bạn
-server = 'DESKTOP-R0D53ER'
+server = 'HP'
 database = 'shopThoiTrang'
 username = 'sa'
-password = '070736'
+password = '123456'
 
 # Tạo một URI kết nối sử dụng SQLAlchemy
 connection_string = f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver=SQL+Server"
@@ -34,8 +34,6 @@ X = ratings_utility_matrix.T
 
 SVD = TruncatedSVD(n_components=10)
 decomposed_matrix = SVD.fit_transform(X)
-
-correlation_matrix = np.corrcoef(decomposed_matrix)
 
 
 # Tạo ma trận tương quan
