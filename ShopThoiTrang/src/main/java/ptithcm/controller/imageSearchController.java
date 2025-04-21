@@ -124,7 +124,7 @@ public class imageSearchController {
 		  String param = avatarFilePath;
 		  ProcessBuilder builder = new ProcessBuilder(
 //	                "cmd.exe", "/c", "cd C:\\Users\\Administrator\\Documents\\ShopThoiTrang\\src\\main\\python & python search_image.py \"" + param + "\"");
-          "cmd.exe", "/c", "cd D:\\Project\\Github\\ShopThoiTrang-HTTM\\ShopThoiTrang\\src\\main\\python & python search_image.py \"" + param + "\"");
+          "cmd.exe", "/c", "cd D:\\Project\\Github\\Shop-Thoi-Trang\\ShopThoiTrang\\src\\main\\python & python search_image.py \"" + param + "\"");
 		 
 	        builder.redirectErrorStream(true);
 	        Process p = builder.start();

@@ -47,7 +47,7 @@ public class deXuatController {
 		}
 		
 		ProcessBuilder builder = new ProcessBuilder(
-                "cmd.exe", "/c", "cd D:\\Project\\Github\\ShopThoiTrang-HTTM\\ShopThoiTrang\\src\\main\\python & python recommend.py \"" + maSanPhamList + "\"");
+                "cmd.exe", "/c", "cd D:\\Project\\Github\\Shop-Thoi-Trang\\ShopThoiTrang\\src\\main\\python & python recommend.py \"" + maSanPhamList + "\"");
         builder.redirectErrorStream(true);
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));

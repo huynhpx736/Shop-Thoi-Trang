@@ -51,8 +51,8 @@ public class quanLiSanPhamController {
 	
 //	@Autowired
 //	ServletContext context;
-	String filePath = "C:\\Users\\Administrator\\Documents\\shopThoiTrang\\src\\main\\webapp\\assets\\img\\product\\"; // Đường dẫn tới thư mục lưu trữ tệp tin hình ảnh
-	String imgXoaPath="C:\\Users\\Administrator\\Documents\\shopThoiTrang\\src\\main\\webapp\\"; // để xóa hình
+	String filePath = "D:\\Project\\Github\\Shop-Thoi-Trang\\ShopThoiTrang\\src\\\\main\\webapp\\assets\\img\\product\\"; // Đường dẫn tới thư mục lưu trữ tệp tin hình ảnh
+	String imgXoaPath="D:\\Project\\Github\\Shop-Thoi-Trang\\ShopThoiTrang\\src\\\\main\\webapp\\"; // để xóa hình
 	
 	@RequestMapping(value="admin/product", method = RequestMethod.GET)
 	public String product(ModelMap model, HttpServletRequest request) {
